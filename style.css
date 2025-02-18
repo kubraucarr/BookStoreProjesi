@@ -43,3 +43,56 @@ nav a:hover {
 .visually-hidden{
     color: #F4A261;
 }
+
+
+
+.gallery-container {
+    position: relative;
+    width: 1100px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(150px * 8); /* 8 kitap genişliği */
+}
+
+.book {
+    min-width: 100px;
+    margin: 30px;
+    text-align: center;
+}
+
+.book img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.nav-button.left {
+    left: 10px;
+}
+
+.nav-button.right {
+    right: 10px;
+}
+
+.nav-button:disabled {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+}
