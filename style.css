@@ -49,6 +49,7 @@ nav a:hover {
 .gallery-container {
     position: relative;
     width: 1100px;
+    height: 400px;
     overflow: hidden;
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -62,13 +63,25 @@ nav a:hover {
 }
 
 .book {
-    min-width: 100px;
+    width: 100px;
     margin: 30px;
     text-align: center;
+
+}
+
+.book:hover {transform: scale(1.1);
+
+}
+.book-title{
+    margin-top:15px;
+    background-color:#F5F1E8;
+    color: #F4A261;
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .book img {
-    width: 100%;
+    width: 100px;
     border-radius: 5px;
 }
 
@@ -95,4 +108,30 @@ nav a:hover {
 .nav-button:disabled {
     background-color: rgba(0, 0, 0, 0.2);
     cursor: not-allowed;
+}
+.add-to-cart{
+    display: none;
+    transform: translateY(-50%);
+    background-color:#F4A261 ;
+    color: white;
+    border: none;
+    margin-top:80px;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.book:hover .add-to-cart{
+    display: block;
+}
+
+.footer{
+    font-size: 30px;
+    margin-top: 25px;
+    color:#F4A261 ;
+    text-align: center;
+}
+
+.icon:hover {
+    transform: scale(1.2)
 }

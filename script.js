@@ -2,8 +2,8 @@ const gallery = document.getElementById('gallery');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 let currentIndex = 0;
-const booksVisible = 4; // Aynı anda görünen kitap sayısı
-const bookWidth = 170; // Kitap genişliği + margin (150px + 20px)
+const booksVisible = 5; // Aynı anda görünen kitap sayısı
+const bookWidth = 190; // Kitap genişliği + margin (150px + 20px)
 const totalBooks = gallery.children.length;
 
 function updateButtons() {
@@ -20,3 +20,40 @@ function scrollGallery(direction) {
 }
 
 updateButtons();
+
+
+let cart = [];
+        
+        function addToCart(bookName) {
+            cart.push(bookName);
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartList = document.getElementById("cart-items");
+            const cartCount = document.getElementById("cart-count");
+
+            cartList.innerHTML = "";
+            if (cart.length === 0) {
+                cartList.innerHTML = '<li class="list-group-item text-muted">Sepetiniz boş</li>';
+            } else {
+                cart.forEach((book, index) => {
+                    const li = document.createElement("li");
+                    li.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center");
+                    li.innerHTML = `${book} <button class="btn btn-sm btn-danger" onclick="removeFromCart(${index})">❌</button>`;
+                    cartList.appendChild(li);
+                });
+            }
+
+            cartCount.innerText = cart.length;
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+
+        function clearCart() {
+            cart = [];
+            updateCart();
+        }
