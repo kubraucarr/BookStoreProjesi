@@ -109,6 +109,7 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.2);
     cursor: not-allowed;
 }
+
 .add-to-cart{
     display: none;
     transform: translateY(-50%);
@@ -164,4 +165,26 @@ nav a:hover {
 /*Books HTML*/
 .img-fluid{
     padding:20px
+}
+
+.card-title{
+
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+}
+
+.fa-book-open{
+margin-left: 49%;
+}
+
+.star {
+    color: #F4A261;
+  margin-top: 2px;
+   margin-left:200px;
+}
+.star-2{
+    color: #F4A261;
+  margin-top: 2px;
+   margin-left:180px;
 }
