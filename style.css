@@ -4,7 +4,7 @@
         margin: 0;
         padding: 0;
     }
-
+   
 nav a {
     color: #F4A261;
     text-decoration: none;
@@ -121,6 +121,28 @@ nav a:hover {
     border-radius: 10%;
 }
 
+
+  
+
+  
+  .overlay-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    color:#F4A261;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none; /* Varsayılan olarak gizli olsun */
+  }
+  
+  /* Hover durumunda buton görünsün */
+  .book:hover .overlay-btn {
+    display: block;
+  }
+
 .book:hover .add-to-cart{
     display: block;
 }
@@ -134,4 +156,12 @@ nav a:hover {
 
 .icon:hover {
     transform: scale(1.2)
+}
+
+
+
+
+/*Books HTML*/
+.img-fluid{
+    padding:20px
 }
