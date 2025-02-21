@@ -110,6 +110,8 @@ nav a:hover {
     cursor: not-allowed;
 }
 
+
+
 .add-to-cart{
     display: none;
     transform: translateY(-50%);
@@ -121,6 +123,9 @@ nav a:hover {
     cursor: pointer;
     border-radius: 10%;
 }
+
+
+
 
 
   
@@ -181,10 +186,27 @@ margin-left: 49%;
 .star {
     color: #F4A261;
   margin-top: 2px;
-   margin-left:200px;
+   margin-left:180px;
 }
 .star-2{
     color: #F4A261;
   margin-top: 2px;
-   margin-left:180px;
+   margin-left:160px;
+}
+#white-star{
+    color:wheat;
+}
+
+
+.fav{
+    border: none;
+    background-color: white;
+   
+   color: #F4A261;
+    
+}
+
+.fav:hover{
+    background-color: #F4A261;
+    color: white;
 }
