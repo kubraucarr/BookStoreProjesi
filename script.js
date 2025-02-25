@@ -22,49 +22,49 @@ function scrollGallery(direction) {
 updateButtons();
 
 
+
+
+
 let cart = [];
         
-        function addToCart(bookName, bookImg)  {
-            cart.push({ name:bookName, img:bookImg});
-            updateCart();
-        }
+function addToCart(bookName, bookImg)  {
+    cart.push({ name:bookName, img:bookImg});
+    updateCart();
+}
 
-        function updateCart() {
-            const cartList = document.getElementById("cart-items");
-            const cartCount = document.getElementById("cart-count");
+function updateCart() {
+    const cartList = document.getElementById("cart-items");
+    const cartCount = document.getElementById("cart-count");
 
-            cartList.innerHTML = "";
+    cartList.innerHTML = "";
 
-            if (cart.length === 0) {
-                cartList.innerHTML = '<li class="list-group-item text-muted">Sepetiniz boş</li>';
-            } else {
-                cart.forEach((book, index) => {
-                    const li = document.createElement("li");
-                    li.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center");
-                    li.innerHTML = `
-                <div class="d-flex align-items-center">
-                    <img src="${book.img}"  style="width:40px; height:auto; margin-right:10px; border-radius:3px;">
-                    <span>${book.name}</span>
-                </div>
-                <button class="btn btn-sm btn-danger" onclick="removeFromCart(${index})"><i class="fa-solid fa-xmark"></i></button>
-            `;
-                    cartList.appendChild(li);
-                });
-            }
+    if (cart.length === 0) {
+        cartList.innerHTML = '<li class="list-group-item text-muted">Sepetiniz boş</li>';
+    } else {
+        cart.forEach((book, index) => {
+            const li = document.createElement("li");
+            li.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center");
+            li.innerHTML = `
+        <div class="d-flex align-items-center">
+            <img src="${book.img}"  style="width:40px; height:auto; margin-right:10px; border-radius:3px;">
+            <span>${book.name}</span>
+        </div>
+        <button class="btn btn-sm btn-danger" onclick="removeFromCart(${index})"><i class="fa-solid fa-xmark"></i></button>
+    `;
+            cartList.appendChild(li);
+        });
+    }
 
-            cartCount.innerText = cart.length;
-        }
-
-        function removeFromCart(index) {
-            cart.splice(index, 1);
-            updateCart();
-        }
-
-        function clearCart() {
-            cart = [];
-            updateCart();
-        }
+    cartCount.innerText = cart.length;
+}
 
 
+function removeFromCart(index) {
+    cart.splice(index, 1);
+    updateCart();
+}
 
-     
+function clearCart() {
+    cart = [];
+    updateCart();
+}  

@@ -60,7 +60,7 @@
           const favList = document.getElementById('favorites-list');
           favList.innerHTML = "";
           if(favorites.length === 0) {
-            favList.innerHTML =`<h5 class="" >Favorileriniz boş.</h5>` ;
+            favList.innerHTML =`<h5 class="fav-boş" >Favorileriniz boş.</h5>` ;
           } else {
             favorites.forEach(item => {
               const col = document.createElement('div');

@@ -127,7 +127,6 @@ nav a:hover {
 
 
 
-
   
 
   
@@ -215,3 +214,17 @@ margin-left: 49%;
     color: #F4A261;
     text-align: center;
 }
+
+.add-to-cart-2{
+
+    border: none;
+    background-color: white;
+    color: #F4A261;
+}
+
+.add-to-cart-2:hover{
+    background-color: #F4A261;
+    color: white;
+}
+
+
