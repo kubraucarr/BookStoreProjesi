@@ -32,7 +32,7 @@
                  <a class="nav-link active" href="index.html">Ana Sayfa<span class="sr-only">(current)</span></a>
                </li>
                <li class="nav-item">
-                <a class="nav-link active"  href="favorites.html"  data-bs-toggle="modal" data-bs-target="#cartModal2"> <i class="fa-solid fa-heart"></i> </a>
+                <a class="nav-link active"  href="favorites.html"  > <i class="fa-solid fa-heart"></i> </a>
                </li>
                <li class="nav-item">
                  <a class="nav-link active" href="#">Link</a>
@@ -60,7 +60,7 @@
           const favList = document.getElementById('favorites-list');
           favList.innerHTML = "";
           if(favorites.length === 0) {
-            favList.innerHTML =`<h5 class="fav-boş" >Favorileriniz boş.</h5>` ;
+            favList.innerHTML =`<h5  >Favorileriniz boş.</h5>` ;
           } else {
             favorites.forEach(item => {
               const col = document.createElement('div');
@@ -71,21 +71,7 @@
                   <div class="card-body">
                     <h5 class="card-title">${item.name}</h5>
              
-                  <p class="card-text">Hakikat, beslendiğimiz hikâyeler ile kendisine aç olduğumuz hikâyeler arasındadır.
-
-                    “Saf ve yaratıcı. Bu cesur, gotik, anti-peri masalı gerçeği yüzümüze vuruyor: Aşk, herkesi kötü̈ adama dönüştürebilir.”
-                    
-                    – Olivie Blake, New York Times’ın çok satan Atlas Altılısı kitabının yazarı
-                    
-                    “Bu, modern fantezinin yeni ustasının sahneye çıkışı. Sakın kaçırmayın.”
-                    
-                    – James Rollins, New York Times’ın çok satan The Starless Crown
-                    
-                    kitabının yazarı
-                    
-                    “Geleneklere, anne olmaya, travmalara ve canavar olmanın ne anlama geldiğine dair güzel, narin, acımasız ve son derece benzersiz bir bakış...
-                    
-                    Tek diyebileceğim çarpıcı olduğu. Sonuna dek, durmaksızın beni şaşırttı.”</p>
+                  <p class="card-text">${item.cardText ? item.cardText : ''}</p>
                     <button class="btn btn-sm btn-danger" onclick="removeFavorite('${item.id}')">
                       <i class="fa-solid fa-trash"></i> Sil
                     </button>

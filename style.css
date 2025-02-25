@@ -185,13 +185,20 @@ margin-left: 49%;
 .star {
     color: #F4A261;
   margin-top: 2px;
-   margin-left:180px;
+   margin-left:190px;
 }
 .star-2{
     color: #F4A261;
   margin-top: 2px;
-   margin-left:160px;
+   margin-left:170px;
 }
+.star-3{
+    color: #F4A261;
+  margin-top: 2px;
+   margin-left:320px;
+}
+
+
 #white-star{
     color:wheat;
 }

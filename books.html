@@ -29,7 +29,7 @@
                  <a class="nav-link active" href="index.html">Ana Sayfa<span class="sr-only">(current)</span></a>
                </li>
                <li class="nav-item">
-                <a class="nav-link active"  href="favorites.html"  data-bs-toggle="modal" data-bs-target="#cartModal2"> <i class="fa-solid fa-heart"></i> </a>
+                <a class="nav-link active"  href="favorites.html"  > <i class="fa-solid fa-heart"></i> </a>
                </li>
                <li class="nav-item">
                  <a class="nav-link active" href="#">Link</a>
@@ -43,9 +43,10 @@
        </nav>
      </div>
 
-
+<!--Kitaplar-->
 
      <div>
+<!--KİTAP 1 -->
         <div class="card mb-3" id="Kitap-Yiyenler" style="max-width: 1000px;">
             <div class="row g-0">
               <div class="col-md-4">
@@ -84,15 +85,16 @@
                     </div>
 
                     <div class="mt-3">
-                      <button class="fav" onclick="addToFavorites('Kitap Yiyenler','Kitap-Yiyenler','img/41TFrcuNuiL.jpg')">
+                      <button class="fav" onclick="addToFavorites('Kitap Yiyenler','Kitap-Yiyenler','img/41TFrcuNuiL.jpg','Hakikat, beslendiğimiz hikâyeler ile kendisine aç olduğumuz hikâyeler arasındadır. “Saf ve yaratıcı. Bu cesur, gotik, anti-peri masalı gerçeği yüzümüze vuruyor: Aşk, herkesi kötü̈ adama dönüştürebilir.” – Olivie Blake, New York Times’ın çok satan Atlas Altılısı kitabının yazarı “Bu, modern fantezinin yeni ustasının sahneye çıkışı. Sakın kaçırmayın.” – James Rollins, New York Times’ın çok satan The Starless Crown kitabının yazarı “Geleneklere, anne olmaya, travmalara ve canavar olmanın ne anlama geldiğine dair güzel, narin, acımasız ve son derece benzersiz bir bakış... Tek diyebileceğim çarpıcı olduğu. Sonuna dek, durmaksızın beni şaşırttı.”')">
                         <i class="fa-solid fa-heart"></i> Favorilere Ekle
                       </button>
-                      <button   class="add-to-cart-2" onclick="addToCart('Kitap Yiyenler','Kitap-Yiyenler','img/41TFrcuNuiL.jpg')" >Sepete Ekle</button>
+                      <button class="add-to-cart-2"  onclick="addToCart('Kitap Yiyenler' , 'img/41TFrcuNuiL.jpg')">Sepete Ekle</button>
                 </div>
               </div>
             </div>
           </div>
-
+        </div>
+<!--KİTAP 2 -->
           <div class="card mb-3" id="Hyunam-Dong Kitabevi" style="max-width: 1000px;">
             <div class="row g-0">
               <div class="col-md-4">
@@ -117,15 +119,15 @@
                   </div>
                 </div>
                 <div class="mt-3">
-                  <button class="fav" onclick="addToFavorites('Hyunam Dong Kitabevi','Hyunam-Dong Kitabevi','img/61FNlfOQsFL.jpg')">
+                  <button class="fav" onclick="addToFavorites('Hyunam Dong Kitabevi','Hyunam-Dong Kitabevi','img/61FNlfOQsFL.jpg', 'Youngju her şeyi doğru yapmıştır; üniversiteye gitmiş, düzgün bir adamla evlenmiş, saygın bir işe girmiştir.Yalnız bir baristadan evli ama mutsuz bir ev hanımına ve Youngju’da özel bir şeyler olduğunu gören yazara kadar hepsinin geçmişinde hayal kırıklıkları vardır. Hyunam-Dong Kitabevi zamanla onların, hayatı nasıl yaşamaları gerektiğini öğrendiği yer haline gelir.Hyunam-Dong Kitabevi, huzuru ve güven duygusunu yakalamanızı sağlayacak, size kitapların iyileştirici gücünü hatırlatacak yürek ısıtan bir hikâye.')">
                     <i class="fa-solid fa-heart"></i> Favorilere Ekle </button>
-                    <button   class="add-to-cart-2" onclick="addToCart('img/61FNlfOQsFL.jpg','Hyunam Dong Kitabevi')" >Sepete Ekle</button>
+                    <button class="add-to-cart-2" onclick="addToCart('Hyunam-Dong Kitabevi','img/61FNlfOQsFL.jpg')">Sepete Ekle</button>
             </div>
                 </div>
               </div>
             </div>
           </div>
-
+<!--KİTAP 3 -->
           <div class="card mb-3"  id="Baek-Sehee" style="max-width: 1000px;">
             <div class="row g-0">
               <div class="col-md-4">
@@ -152,16 +154,16 @@
                     </div>
                   </div>
                   <div class="mt-3">
-                    <button class="fav" onclick="addToFavorites('Baek-Sehee','Baek Sehee','img/511kYdqQuEL._SL1240_.jpg')">
+                    <button class="fav" onclick="addToFavorites('Baek-Sehee','Baek Sehee','img/511kYdqQuEL._SL1240_.jpg' , 'Psikiyatrist: Evet, size nasıl yardımcı olabilirim?Ben: Şey, sanırım biraz depresifim. Biraz daha detaya gireyim mi?Bir yayınevinin sosyal medya yöneticiliğini başarıyla üstlenen Baek Seheenin hayatında her şey yolunda gitmektedir; ta ki depresyon nedeniyle psikiyatristle görüşmeye başlayana dek.Baek devamlı bir üzüntü, kaygı ve kendinden şüphe duyma hali içindeyken, çevresine karşı da son derece yargılayıcıdır.')">
                       <i class="fa-solid fa-heart"></i> Favorilere Ekle
                     </button>
-                    <button   class="add-to-cart " onclick="addToCart('Baek-Sehee','Baek Sehee','img/511kYdqQuEL._SL1240_.jpg')">Sepete Ekle</button>
+                    <button class="add-to-cart-2" onclick="addToCart('Baek Sehee','img/511kYdqQuEL._SL1240_.jpg')">Sepete Ekle</button>
               </div>
                 </div>
               </div>
             </div>
           </div>
-
+<!--KİTAP 4 -->
           <div class="card mb-3" id="ŞamanınKadınÇemberi" style="max-width: 1000px;">
             <div class="row g-0">
               <div class="col-md-4 favbook">
@@ -176,7 +178,7 @@
                     Çemberler, doğumun ve ölümün, başlangıcın ve bitişin, yaralara bakmanın ve dönüşümün, kutsal olanla birleşip onu yüceltmenin yeridir. Orada tüm kadınlar toplanır, birbirini destekler ve en zayıf olanı yüreklendirmek için gücü çağırır. Kutsal öykülerde anlatılan ana tanrıçanın çeşitli formları eşliğinde yürünecek bu gizli yolda amaç kendi potansiyelinizi açığa çıkarmak, uyum yaratmak ve şifadır.</p>
                   <div class="row">
                     <p class="card-text"><small class="text-body-secondary">Felis Kohen (Eser Sahibi)</small></p>
-                  <div class="star-2">   
+                  <div class="star-3">   
                     (3,0)  
                     <i class="fa-solid fa-star "></i>
                     <i class="fa-solid fa-star "></i>
@@ -186,16 +188,16 @@
                   </div>
                 </div>
                 <div class="mt-3">
-                  <button class="fav" onclick="addToFavorites('ŞamanınKadınÇemberi','Şamanın Kadın Çemberi','img/518W8cuuipL.jpg')">
+                  <button class="fav" onclick="addToFavorites('ŞamanınKadınÇemberi','Şamanın Kadın Çemberi','img/518W8cuuipL.jpg' , 'Kadın çemberi, parçalarını bir araya getirmeye niyetlenmiş bir kadının muazzam bir metaforudur. Çemberde yerinizi aldığınız andan itibaren çemberin alanı çalışmaya başlar. Görünmez ilmekler atılır, gizli düğümler çözülür...Çemberler, doğumun ve ölümün, başlangıcın ve bitişin, yaralara bakmanın ve dönüşümün, kutsal olanla birleşip onu yüceltmenin yeridir. ')">
                     <i class="fa-solid fa-heart"></i> Favorilere Ekle
                   </button>
-                  <button   class="add-to-cart " onclick="addToCart('ŞamanınKadınÇemberi','Şamanın Kadın Çemberi','img/518W8cuuipL.jpg')">Sepete Ekle</button>
+                  <button class="add-to-cart-2" onclick="addToCart('Şamanın Kadın Çemberi','img/518W8cuuipL.jpg')">Sepete Ekle</button>
             </div>
                 </div>
               </div>
             </div>
           </div>
-
+<!--KİTAP 5 -->
           <div class="card mb-3" id="NakonaEskiciDükkanı" style="max-width: 1000px;">
             <div class="row g-0">
               <div class="col-md-4 ">
@@ -224,109 +226,162 @@
                   <button class="fav" onclick="addToFavorites('Nakano-Eskici-Dükkanı','Nakano Eskici Dükkanı','img/91vceR2uQQL._SY466_.jpg')">
                     <i class="fa-solid fa-heart"></i> Favorilere Ekle
                   </button>
-                  <button   class="add-to-cart-2" onclick="addToCart('Nakano-Eskici-Dükkanı','Nakano Eskici Dükkanı','img/91vceR2uQQL._SY466_.jpg')" >Sepete Ekle</button>
+                  <button class="add-to-cart-2" onclick="addToCart('Nakano Eskici Dükkanı','img/91vceR2uQQL._SY466_.jpg')">Sepete Ekle</button>
+            </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--KİTAP 6-->
+          <div class="card mb-3" id="İnsanlar"  style="max-width: 1000px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/6122Ye0AdSL._SL1190_.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <i class="fa-solid fa-book-open"></i>
+                  <h5 class="card-title">| İNSANLAR |</h5>
+                  <p class="card-text">"Bu satırları okuyanlarınızın büyük çoğunluğunun, insanların bir mitten ibaret olduğuna inandığını biliyorum ama ben size onların gerçekten var olduklarını bildirmek üzere buradayım. Bilmeyenler için söyleyeyim, insan dediğimiz şey orta zekalı ve iki ayaklı bir yaşam formu; evrenin çok ıssız bir köşesinde yer alan küçük ve sulu bir gezegende, büyük ölçüde yanılsamalarla dolu bir varoluş sürdürüyor."
+
+                    Yağmurlu bir akşamda Profesör Andrew Martin, önce dünyanın en büyük matematik bilmecesini çözmeyi başarıyor, ardından sırra kadem basıyor. Nihayet bir yol kenarında çırılçıplak halde bulunduğunda, kıyafetsizlikten daha ciddi bir meselesi olduğu ortaya çıkıyor: Andrew Martin artık insanlardan tiksiniyor; görünüşlerinden de yiyip içtiklerinden de bitmeyen şiddet ve savaş arzularından da... Yabancı bir tür arasında kaybolmuş hissediyor kendini. 
+                    
+                   </p>
+                    <div class="row">
+                      <p class="card-text"><small class="text-body-secondary">Matt Haig (Eser Sahibi), Elif Ersavcı (Çevirmen)</small></p>
+                    <div class="star-2">   
+                      (5,0)  
+                      <i class="fa-solid fa-star "></i>
+                      <i class="fa-solid fa-star "></i>
+                      <i class="fa-solid fa-star "></i>
+                      <i class="fa-solid fa-star " ></i>
+                      <i class="fa-solid fa-star" ></i>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <button class="fav" onclick="addToFavorites('İnsanlar','İnsanlar','img/6122Ye0AdSL._SL1190_.jpg')">
+                      <i class="fa-solid fa-heart"></i> Favorilere Ekle
+                    </button>
+                    <button class="add-to-cart-2" onclick="addToCart('İnsanlar','img/6122Ye0AdSL._SL1190_.jpg')">Sepete Ekle</button>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--KİTAP 7-->
+          <div class="card mb-3" id="NevrotikBirGezegendenNotlar" style="max-width: 1000px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/61IFPdRj-QL._SL1195_.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <i class="fa-solid fa-book-open"></i>
+                  <h5 class="card-title">| Nevrotik Bir Gezegenden Notlar |</h5>
+                  <p class="card-text">"Zamanı Durdurmanın Yolları"nın Yazarından
+
+                    Dünya aklımızı zorluyor. çılgın ve gergin bir gezegen, telaşlı ve gergin insanlarını yaratıyor; politikadan vücut kitle endeksimize hemen her şey bizi dehşete düşürüyor.
+                    
+                    Çılgın bir dünyada çıldırmadan nasıl yaşarız?
+                    
+                    Çevremiz kesintisiz anksiyete kaynağına dönüşmüşken nasıl mutlu hissedebiliriz?
+                    
+                    Matt Haig, haberlerden sosyal medyaya, iş ortamından bağımlılıklara çevremizi kuşatmış dış etkenlerin "nasıl hissettiğimiz" üstündeki etkisini anlamaya, dijital çağın törelerini sorgulamaya, biraz daha serinkanlı olmaya çağırıyor bizleri. Nevrotik Bir Gezegenden Notlar, anksiyete ve panik atakla uzun yıllar mücadele etmiş bir 21. yüzyıl insanından, böyle bir yüzyılda kendimizi mutlu, bütün ve insan hissedebilmek üzerine kişisel ve yaşam dolu bir bakış.</p>
+                    <div class="row">
+                      <p class="card-text"><small class="text-body-secondary">Matt Haig (Eser Sahibi), Elif Ersavcı (Çevirmen)</small></p>
+                    <div class="star-2">   
+                      (5,0)  
+                      <i class="fa-solid fa-star "></i>
+                      <i class="fa-solid fa-star "></i>
+                      <i class="fa-solid fa-star "></i>
+                      <i class="fa-solid fa-star " ></i>
+                      <i class="fa-solid fa-star" ></i>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <button class="fav" onclick="addToFavorites('Nevrotik Bir Gezegenden Notlar','Nevrotik Bir Gezegenden Notlar','img/61IFPdRj-QL._SL1195_.jpg')">
+                      <i class="fa-solid fa-heart"></i> Favorilere Ekle
+                    </button>
+                    <button class="add-to-cart-2" onclick="addToCart('Nevrotik Bir Gezegenden Notlar','img/61IFPdRj-QL._SL1195_.jpg')">Sepete Ekle</button>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--Kitap 8-->
+          <div class="card mb-3" id="GeceYarısıKütüphanesi" style="max-width: 1000px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/81Q+Dx71auS._SL1500_.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <i class="fa-solid fa-book-open"></i>
+                  <h5 class="card-title">| Gece Yarısı Kütüphanesi</h5>
+                  <p class="card-text">"Yaşamla ölüm arasında bir kütüphane var," dedi. "Bu kütüphanedeki raflar sonsuza kadar gider. Her kitap yaşamış olabileceğin başka bir hayatı yaşama şansını sunar sana. Farklı seçimler yapmış olsan, şu an nasıl bir hayatın olacağını görürsün.
+                    Pişmanlıklarını telafi etme şansın olsaydı, bazı konularda farklı davranır mıydın?"
+                    
+                    Nora Seed berbat halde. Kedisi öldü. İşinden kovuldu. Abisi onunla konuşmuyor. Kimsenin ona ihtiyacı yok. Art arda alınmış kötü kararların sonucunda bir kütüphanede buluyor kendini. Zamanın hiç akmadığı bir gece yarısı kütüphanesinde, sonsuz sayıda kitabın ortasında... Kitapların her birinde Nora'nın farklı bir hayatı yazılı. Başka kararlar verseydi yaşamış olabileceği hayatlar.
+                    
+                    </p>
+                  <div class="row">
+                    <p class="card-text"><small class="text-body-secondary">Matt Haig (Eser Sahibi), Kıvanç Güney (Çevirmen)</small></p>
+                  <div class="star-2">   
+                    (5,0)  
+                    <i class="fa-solid fa-star "></i>
+                    <i class="fa-solid fa-star "></i>
+                    <i class="fa-solid fa-star "></i>
+                    <i class="fa-solid fa-star " ></i>
+                    <i class="fa-solid fa-star" ></i>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <button class="fav" onclick="addToFavorites('Gece Yarısı Kütüphanesi','Gece Yarısı Kütüphanesi','img/81Q+Dx71auS._SL1500_.jpg')">
+                    <i class="fa-solid fa-heart"></i> Favorilere Ekle
+                  </button>
+                  <button class="add-to-cart-2" onclick="addToCart('Gece Yarısı Kütüphanesi','img/81Q+Dx71auS._SL1500_.jpg')">Sepete Ekle</button>
+            </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--Kitap 9-->
+          <div class="card mb-3" id="Hayatİmkansız" style="max-width: 1000px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/610siwssz0L._SL1500_.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <i class="fa-solid fa-book-open"></i>
+                  <h5 class="card-title">| Hayat İmkansız |</h5>
+                  <p class="card-text">Bazen bize sihir gibi görünen şey, yaşamın henüz anlayamadığımız bir parçasıdır.
+                    Grace Winters hayata küsmüş emekli bir matematik öğretmeni. Günlerini televizyon izleyip kitap okuyarak, beyninin körelmemesi için bulmaca çözerek geçiriyor. Bir zamanlar üstüne titrediği bahçesine bile ilgisini kaybetmiş. Yalnız, yapayalnız hissediyor.
+                    Yıllardır görmediği ve haber almayı beklemediği bir arkadaşının ona bir Akdeniz adasındaki köhne evini miras bıraktığını öğrenince, Grace bir planı ya da cebinde bir ada rehberi olmadan, aklında sorular ve tek yön uçak biletiyle, kendini İbiza'da buluyor.
+                    "Neden ben? Neden bu ev?" Arkadaşının hayatına −ve ölümüne− dair cevaplar İbiza'nın engebeli tepeleri ile altın kumsalları arasında gizli. .</p>
+                  <div class="row">
+                    <p class="card-text"><small class="text-body-secondary">Matt Haig (Eser Sahibi), Kıvanç Güney (Çevirmen)</small></p>
+                  <div class="star-2">   
+                    (5,0)  
+                    <i class="fa-solid fa-star "></i>
+                    <i class="fa-solid fa-star "></i>
+                    <i class="fa-solid fa-star "></i>
+                    <i class="fa-solid fa-star " ></i>
+                    <i class="fa-solid fa-star" ></i>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <button class="fav" onclick="addToFavorites('Hayat İmkansız','img/610siwssz0L._SL1500_.jpg')">
+                    <i class="fa-solid fa-heart"></i> Favorilere Ekle
+                  </button>
+                  <button class="add-to-cart-2" onclick="addToCart('Hayat İmkansız','img/610siwssz0L._SL1500_.jpg')">Sepete Ekle</button>
             </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="img/41TFrcuNuiL.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <i class="fa-solid fa-book-open"></i>
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="img/41TFrcuNuiL.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <i class="fa-solid fa-book-open"></i>
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="img/41TFrcuNuiL.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <i class="fa-solid fa-book-open"></i>
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="img/41TFrcuNuiL.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <i class="fa-solid fa-book-open"></i>
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="img/41TFrcuNuiL.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <i class="fa-solid fa-book-open"></i>
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mb-3" style="max-width: 1000px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="img/41TFrcuNuiL.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <i class="fa-solid fa-book-open"></i>
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
+          
 
     <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
       <div class="modal-dialog">

@@ -15,11 +15,11 @@ function updateFavCartCount() {
 }
 
 // Favorilere Ekleme Fonksiyonu
-function addToFavorites(cardId, bookName, bookImg) {
+function addToFavorites(cardId, bookName, bookImg , cardText) {
   // Aynı kitabın tekrar eklenmemesi için kontrol
   const exists = favorites.some(item => item.id === cardId);
   if (!exists) {
-    favorites.push({ id: cardId, name: bookName, img: bookImg });
+    favorites.push({ id: cardId, name: bookName, img: bookImg , cardText:cardText});
     localStorage.setItem('favorites', JSON.stringify(favorites));
     updateFavCount();
     alert(bookName + " favorilere eklendi!");
@@ -32,8 +32,8 @@ function addToFavorites(cardId, bookName, bookImg) {
 
 let favoricart = [];
 
-function addToCart(bookName, bookImg)  {
-    favoricart.push({ name: bookName, img: bookImg });
+function addToCart(bookName, bookImg, )  {
+    favoricart.push({ name:bookName, img:bookImg, });
     updateCart();
 }
 
