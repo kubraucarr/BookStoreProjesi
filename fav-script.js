@@ -72,9 +72,3 @@ function clearCart() {
     favoricart = [];
     updateCart();
 }
-
-
-
-
-
-        
